@@ -12,7 +12,6 @@ module.exports = {
                 "Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel go to `util/playing.js` and remove the line number 15\n\nThank you for using my code! [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot)",
                 message.channel
             );
-            message.guild.me.voice.channel.leave(); //If you want your bot stay in vc 24/7 remove this line :D
             message.client.queue.delete(message.guild.id);
             return;
         }
